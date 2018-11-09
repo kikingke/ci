@@ -232,7 +232,7 @@ footer.footer .social-link {
   width: 4rem;
   line-height: 4.3rem;
   font-size: 1.5rem;
-  background-color: #1D809F;
+  background-color: var(--azul);
   -webkit-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
   -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
@@ -415,3 +415,20 @@ a:hover, a:focus, a:active {
 .card-text{
    color: var(--negro) !important;
 }
+
+
+
+.video-responsive {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 45%;
+    padding-top: 30px;
+    position: relative;
+    }
+.video-responsive iframe, .video-responsive object, .video-responsive embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    }
