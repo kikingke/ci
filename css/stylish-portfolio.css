@@ -125,15 +125,15 @@ h6 {
 
 
 .service-icon {
-  background-color: #fff;
-  color: #1D809F;
-  height: 7rem;
-  width: 7rem;
-  display: block;
-  line-height: 7.5rem;
-  font-size: 2.25rem;
-  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: #1D809F;
+    height: 10rem;
+    width: 10rem;
+    display: block;
+    line-height: 10.5rem;
+    font-size: 3.25rem;
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 .callout {
@@ -416,7 +416,7 @@ a:hover, a:focus, a:active {
    color: var(--negro) !important;
 }
 
-
+/*video*/
 
 .video-responsive {
     height: 0;
@@ -432,3 +432,52 @@ a:hover, a:focus, a:active {
     top: 0;
     width: 100%;
     }
+
+
+.how-section1{
+    margin-top:-15%;
+    padding: 10%;
+}
+.how-section1 h4{
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 30px;
+}
+.how-section1 .subheading{
+    color: #3931af;
+    font-size: 20px;
+}
+.how-section1 .row
+{
+    margin-top: 10%;
+}
+.how-img 
+{
+    text-align: center;
+}
+.how-img img{
+    width: 40%;
+}
+
+
+
+
+.list-group-item {
+
+   background-color: rgba(255,255,255,0)!important; 
+/*   border-bottom: 1px solid rgba(255,255,255,.7);*/
+   border: 1px solid rgba(255,255,255,.7);
+
+}
+
+
+.list-group-flush:last-child .list-group-item:last-child {
+    border-bottom: 1px solid rgba(255,255,255,.7);
+}
+
+
+
+
+
+
+
