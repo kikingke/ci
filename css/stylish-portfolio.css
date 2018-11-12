@@ -125,12 +125,12 @@ h6 {
 
 
 .service-icon {
-    background-color: #fff;
-    color: #1D809F;
-    height: 10rem;
-    width: 10rem;
+    background-color: var(--dark);
+    color: var(--blanco);
+    height: 9rem;
+    width: 9rem;
     display: block;
-    line-height: 10.5rem;
+    line-height: 9.5rem;
     font-size: 3.25rem;
     -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
@@ -222,8 +222,8 @@ h6 {
 }
 
 footer.footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
 }
 
 footer.footer .social-link {
@@ -476,8 +476,24 @@ a:hover, a:focus, a:active {
 }
 
 
+.navbar-brand {
 
+  padding-top: 0rem; 
+ padding-bottom: 0rem; 
 
+}
 
+.copy{
+  padding-top: 2rem;
+}
 
+.card-pricing .list-unstyled li {
+    padding: .5rem 0;
+    color: #6c757d;
+}
 
+.card-pricing.popular{
+ z-index: 1;
+    border: 6px solid #3498db;
+
+}
