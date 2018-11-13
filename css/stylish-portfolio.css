@@ -497,3 +497,9 @@ a:hover, a:focus, a:active {
     border: 6px solid #3498db;
 
 }
+
+.btn {
+   
+    font-size: 1.3rem;
+
+}
