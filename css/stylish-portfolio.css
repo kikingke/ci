@@ -499,6 +499,16 @@ a:hover, a:focus, a:active {
 
 }
 
+.card-pricing.popular2{
+ z-index: 1;
+    border: 6px solid var(--amarillo);
+
+}
+
+.bg-warning{
+      background-color: var(--amarillo)!important;
+}
+
 .btn {
    
     font-size: 1.3rem;
