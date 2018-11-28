@@ -33,7 +33,16 @@
   </head>
 
   <body id="page-top">
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	  
+	  
     <!-- Navigation -->
 
 <nav id="mainMenu" class="navbar navbar-expand-lg navbar-dark bg-light fixed-top">
@@ -789,28 +798,13 @@
                 </ul>
             </div>
             <div class="col-md-3 col-sm-6 footerleft">
-                <h6 class="heading7">Facebook</h6>
-             <!--    <div class="fb-page" data-href="https://www.facebook.com/madgeek.in/" data-tabs="timeline"
-                     data-small-header="true" data-width="270px" data-hide-cover="true"
-                     data-height="260px"
-                     data-show-facepile="true">
-                    <blockquote cite="https://www.facebook.com/madgeek.in/" class="fb-xfbml-parse-ignore"><a
-                                href="https://www.facebook.com/madgeek.in/">Madgeek</a></blockquote>
-
-
-                </div> -->
-
-                <div class="fb-page" data-href="https://www.facebook.com/clinforc" data-tabs="timeline" 
-                    data-small-header="false" data-adapt-container-width="true" data-height="260px"
-                    data-hide-cover="false" 
-                    data-show-facepile="true">
-                    <blockquote cite="https://www.facebook.com/clinforc" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/clinforc">Club de Informática de Carazo</a></blockquote></div>
-            </div>
-            <div class="col-md-2 col-sm-6 footerleft text-center pad1">
-            
-                 <a href="#">
+                                 <a href="#">
                      <img src="img/V3.png" alt="" class="img-fluid" width="150">
                  </a>
+            </div>
+            <div class="col-md-2 col-sm-6 footerleft text-center pad1">
+		    <h6 class="heading7">Facebook</h6>
+               <div class="fb-page" data-href="https://www.facebook.com/clinforc" data-tabs="timeline" data-width="300" data-height="310" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/clinforc" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/clinforc">Club de Informática de Carazo</a></blockquote></div>
             </div>
         </div>
     </div>
@@ -872,14 +866,6 @@
 
      
   </script>
-  <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.2';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-  </body>
+  
 
 </html>
