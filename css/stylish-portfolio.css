@@ -588,7 +588,7 @@ footer {
 
   min-height: 350px;
 
-  padding-top: 10px
+  padding-top: 30px
 }
 
 
@@ -762,4 +762,117 @@ footer {
 }
 
 
-.carousel-item{min-height:300px; background:#ccc; }
+.carousel-item{min-height:auto; background:#ccc; }
+
+/**********************************************************************************contnt****/
+
+/*.row_top_slider_block {
+    margin-bottom: 60px;
+}
+
+.card-wrapper {
+    box-shadow: 10px 10px 15px 0px rgba(55, 55, 55, .10);
+    transition: all .25s ease-in-out;
+}
+
+@media only screen and (min-width: 768px){
+.flexbox-container {
+    margin: 0;
+}
+}
+
+@media only screen and (min-width: 768px){
+.flexbox-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+}
+
+.orange .ui_slider_block__desc {
+    background: rgba(255, 102, 0, 0.95);
+}
+
+.orange .card-title {
+    border-top-color: #f60;
+
+}
+
+.ui_slider_block__desc {
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    right: inherit;
+    height: 263px;
+    opacity: 0;
+    transform: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    display: table;
+    width: calc(100% - 30px);
+    margin: 0 15px;
+}
+
+
+
+.card-wrapper.orange .card-title {
+    text-align: center;
+    background: #fff;
+    border-top: 10px solid #f60;
+}
+
+.card-wrapper.blue .card-title {
+    text-align: center;
+    background: #fff;
+    border-top: 10px solid #09f;
+}
+
+.card-wrapper.green .card-title {
+    text-align: center;
+    background: #fff;
+    border-top: 10px solid #b0dc00;
+}
+
+.card-wrapper.yellow .card-title {
+    text-align: center;
+    background: #fff;
+    border-top: 10px solid #f1c40f;
+}
+
+
+
+.card-wrapper .card-title a {
+    font-weight: 700;
+    margin: 0;
+    color: #373737;
+    text-decoration: none;
+    font-size: 15px;
+    max-width: 100%;
+    display: block;
+    border-top: 0;
+    padding: 15px 0;
+}
+
+.card-wrapper .card-title a small {
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.card-wrapper:hover {
+    box-shadow: 5px 5px 5px 0px rgba(55, 55, 55, 0.15);
+}*/
+
+.article .li{
+  text-decoration-style: none;
+  list-style: none;
+
+}

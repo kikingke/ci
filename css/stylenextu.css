@@ -64,7 +64,7 @@
     top: 0px;
     z-index: 1;
     right: inherit;
-    height: 263px;
+    height: calc(100% - 30%);
     opacity: 0;
     transform: none;
     -webkit-transition: all 0.3s;
@@ -82,11 +82,12 @@
 }
 .ui_slider_block__desc ul {
     font-size: 1rem;
-    margin-left: 30px;
+    margin-left: 0px;
 }
 .ui_slider_block__desc ul li {
     color: #fff;
     text-align: left;
+    list-style: none;
 }
 .ui_slider_block__desc ul li:before {
     font-family: 'FontAwesome';
@@ -129,14 +130,29 @@
 
 /*New Card Boxes */
 .orange .ui_slider_block__desc {
-    background: rgba(255, 102, 0, 0.7);
+    background: rgba(255, 102, 0, 0.67);
 }
+
+.green .ui_slider_block__desc {
+    background: rgba(176, 220, 0, 0.67);
+}
+
+.blue .ui_slider_block__desc {
+    background: rgba(0, 153, 255, 0.67);
+}
+
+.yellow .ui_slider_block__desc {
+    background: rgba(229, 183, 0, 0.67);
+}
+
+.purple .ui_slider_block__desc{
+    background: rgba(142,68,173,.67); 
+}
+
 .orange .card-title {
      border-top-color: #f60; 
 }
-.green .ui_slider_block__desc {
-    background: rgba(176, 220, 0, 0.7);
-}
+
 .green .card-title {
     border-top-color: #b0dc00;
 
@@ -147,19 +163,7 @@
 }
 
 .yellow .card-title {
-    border-top-color: #f1c40f;
-}
-
-.blue .ui_slider_block__desc {
-    background: rgba(0, 153, 255, 0.7);
-}
-
-.yellow .ui_slider_block__desc {
-    background: rgba(241, 196, 15, 0.7);
-}
-
-.purple .ui_slider_block__desc{
-    background: rgba(142,68,173,.7); 
+    border-top-color: #e5b700;
 }
 
 .purple .card-title {
