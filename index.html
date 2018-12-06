@@ -43,29 +43,32 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 	  
 	  
-    <!-- Navigation -->
 
-<nav id="mainMenu" class="navbar navbar-expand-lg navbar-dark bg-light fixed-top">
-  <a class="navbar-brand" href="#">
-    <img src="img/V1icon.png" alt="" width="48px">
-  Club de Informática</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ml-auto">
-      <a class="nav-item nav-link js-scroll-trigger active" href="#page-top">Inicio <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link js-scroll-trigger" href="#about">Sobre Nosotros</a>
-      <a class="nav-item nav-link js-scroll-trigger" href="#services">Enseñamos</a>
-      <a class="nav-item nav-link js-scroll-trigger" href="#team">Equipo</a>
-      <a class="nav-item nav-link js-scroll-trigger" href="#contact">Contactanos</a>
-    </div>
-  </div>
-</nav>
 
 
 
 <header>
+	    <!-- Navigation -->
+
+	<nav id="mainMenu" class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+	  <a class="navbar-brand" href="#">
+	    <img src="img/V1icon.png" alt="" width="48px">
+	  Club de Informática</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	    <div class="navbar-nav ml-auto">
+	      <a class="nav-item nav-link js-scroll-trigger active" href="#page-top">Inicio <span class="sr-only">(current)</span></a>
+	      <a class="nav-item nav-link js-scroll-trigger" href="#about">Sobre Nosotros</a>
+	      <a class="nav-item nav-link js-scroll-trigger" href="#services">¿Qué Enseñamos?</a>
+	      <a class="nav-item nav-link js-scroll-trigger" href="#team">Colaboradores</a>
+	      <a class="nav-item nav-link js-scroll-trigger" href="#contact">Contáctanos</a>
+	    </div>
+	  </div>
+</nav>
+
+
   <div class="overlay"></div>
   <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
     <source src="img/video1.mp4" type="video/mp4">
@@ -576,9 +579,9 @@
 <footer id="contact" class="bg-dark" >
     <div class="container-fluid">
         <div class="row">
-          <div class="col-md-2 col-sm-6 footerleft">
+          <div class="col-md-2 col-sm-6 footerleft text-center">
                                  <a href="#">
-                     <img src="img/V3.png" alt="" class="img-fluid" width="150">
+                     <img src="img/V3.png" alt="" class="img-fluid" width="130">
                  </a>
             </div>
             <div class="col-md-4 col-sm-6 footerleft ">
@@ -606,10 +609,10 @@
             <div class="col-md-3 col-sm-6 footerleft">
                 <h6 class="heading7">Menú</h6>
                 <ul class="footer-ul">
-                    <li><a href="#" title="MadGeek About Us"> <i class="fa fm fa-angle-double-right"></i>Inicio</a></li>
+                    <li><a href="#page-top" title="MadGeek About Us" class="js-scroll-trigger"> <i class="fa fm fa-angle-double-right"></i>Inicio</a></li>
                     <li><a href="#about" title="MadGeek Privacy Policy"> <i class="fa fm fa-angle-double-right"></i>Sobre Nosotros</a></li>
-                    <li><a href="#services" title="madGeek Terms & Conditions"> <i class="fa fm fa-angle-double-right"></i>Enseñamos</a></li>
-                    <li><a href="#team" title="MadGeek Contact us"> <i class="fa fm fa-angle-double-right"></i>Equipo</a></li>
+                    <li><a href="#services" title="madGeek Terms & Conditions"> <i class="fa fm fa-angle-double-right"></i>¿Qué Enseñamos?</a></li>
+                    <li><a href="#team" title="MadGeek Contact us"> <i class="fa fm fa-angle-double-right"></i>Colaboradores</a></li>
                 </ul>
             </div>
 
@@ -667,15 +670,17 @@
             .trigger('resize');
       })(jQuery);
 
-      // $(window).scroll(function() {    
-      //     var scroll = $(window).scrollTop();
+      $(window).scroll(function() {    
+          var scroll = $(window).scrollTop();
 
-      //     if (scroll >= 100) {
-      //         $(".top-nav").addClass("light-header");
-      //     } else {
-      //         $(".top-nav").removeClass("light-header");
-      //     }
-      // });
+          if (scroll >= 100) {
+              $("#mainMenu").removeClass("bg-transparent");
+              $("#mainMenu").addClass("bg-light");
+          } else {
+               $("#mainMenu").addClass("bg-transparent");
+              $("#mainMenu").removeClass("bg-light");
+          }
+      });
 
 
      
