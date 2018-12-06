@@ -159,6 +159,7 @@ h6 {
   overflow: hidden;
   max-width: 530px;
   margin: auto auto 1rem;
+  z-index: 0;
 }
 
 .portfolio-item .caption {
@@ -172,6 +173,12 @@ h6 {
   top: 0;
   bottom: 0;
   z-index: 1;
+}
+
+.carousel-indicators {
+
+    z-index: 0 ;
+
 }
 
 .portfolio-item .caption .caption-content {
@@ -301,10 +308,18 @@ a:hover, a:focus, a:active {
 
 /********************************************************************************************************************my styles**/
 
+.bg-transparent{
+      background-color: transparent!important;
+ transition: all 1s ease;
+  font-weight: bold;
+  z-index: 2;
+}
 
 .bg-light {
     background-color: #3498db!important;
-    font-weight: bold;
+ transition: all 1s ease;
+  font-weight: bold;
+    z-index: 2;
 }
 
 .bg-white {
@@ -525,6 +540,7 @@ header {
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
+  z-index: 1;
 }
 
 header video {
@@ -544,7 +560,7 @@ header video {
 
 header .container {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 header .overlay {
@@ -594,7 +610,7 @@ footer {
 
 .footerleft {
   margin-top: 20px;
-  padding: 0 36px;
+  padding: 1;
 }
 
 .logofooter {
