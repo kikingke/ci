@@ -540,3 +540,7 @@ transition: all 0.4s ease-in-out;
 .btn-success{
    background-color: var(--verde1)!important;
 }
+
+.ccl{
+        padding: 3.5rem 3.5rem 0rem 0rem !important;
+}
