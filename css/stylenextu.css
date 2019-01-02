@@ -579,3 +579,12 @@ ul.timeline > li:before {
     height: 20px;
     z-index: 400;
 }
+
+
+.bn {
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+filter: grayscale(100%);	
+}
