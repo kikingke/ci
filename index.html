@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" type="image/png" href="img/q3.png"/>
+    <link rel="icon" type="image/png" href="img/q2.png"/>
     <title>Club de Informática</title>
 
     <!-- Bootstrap Core CSS -->
@@ -49,7 +49,7 @@
 
     <nav id="mainMenu" class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
       <a class="navbar-brand" href="#">
-        <img src="img/q2.png" alt="" width="70px">
+        <img src="img/q4.png" alt="" width="68px" class="rounded-circle filter" id="mainlogo">
       Club de Informática</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -118,7 +118,7 @@
 
                 <div class="row skroller cards-home row_top_slider_block">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                        <div class="card-wrapper orange bn">
+                        <div class="card-wrapper orange">
                             <div class="card-image">
                                 <a href="#modalInformatica" data-toggle="modal">
                                     <div class="ui_slider_parent flexbox-container">
@@ -179,7 +179,7 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                        <div class="card-wrapper green bn">
+                        <div class="card-wrapper green">
                             <div class="card-image">
                                 <a href="#modalProgramacion" data-toggle="modal">
                                     <div class="ui_slider_parent flexbox-container">
@@ -201,7 +201,7 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                        <div class="card-wrapper yellow bn">
+                        <div class="card-wrapper yellow">
                             <div class="card-image">
                                 <a href="#modalDiseno" data-toggle="modal">
                                     <div class="ui_slider_parent flexbox-container">
@@ -1297,9 +1297,16 @@
           if (scroll >= 100) {
               $("#mainMenu").removeClass("bg-transparent");
               $("#mainMenu").addClass("bg-light");
+
+            //  $("#mainlogo").removeClass("filter");
+            //  $("#mainlogo").addClass("");
           } else {
                $("#mainMenu").addClass("bg-transparent");
               $("#mainMenu").removeClass("bg-light");
+
+            //  $("#mainlogo").addClass("filter");
+             // $("#mainlogo").addClass("");
+
           }
       });
      
