@@ -1,0 +1,645 @@
+
+ :root{
+    --azul: #3498db;
+    --blanco:#ffffff;
+    --verde:#b0dc00;
+    --amarillo:#e5b700;
+    --naranja:#f60;
+    --morado:#c233ff;
+    
+    --verde1:#2ecc71;
+    --moradofondo:rgba(142,68,173,.47); 
+    --naranjafondo: rgba(255, 102, 0, 0.47);
+    --verdefondo: rgba(176, 220, 0, 0.47);
+    --azulfondo: rgba(0, 153, 255, 0.47);
+    --amarillofondo: rgba(229, 183, 0, 0.47);
+}
+ 
+
+
+.card-wrapper:hover {
+    box-shadow: 5px 5px 5px 0px rgba(55, 55, 55, 0.15);
+}
+.card-wrapper:hover .ui_slider_block__desc {
+    opacity: 1;
+}
+.card-wrapper:hover .card-title a small {
+    text-decoration: underline;
+}
+.card-wrapper .card-title {
+    text-align: center;
+    background: #fff;
+    border-top: 10px solid;
+}
+.card-wrapper .card-title h4 {
+    font-weight: 700;
+    margin: 0;
+    color: #373737;
+    text-decoration: none;
+    font-size: 1.5rem;
+    max-width: 100%;
+    display: block;
+    border-top: 0;
+    padding: 15px 0;
+}
+.card-wrapper .card-title a small {
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+}
+@media (min-width:991px) and (max-width:1200px) {
+    .card-wrapper .card-title a {
+        letter-spacing: -1px;
+    }
+    .card-wrapper .card-title a small {
+        letter-spacing: normal;
+    }
+}
+@media (min-width:768px) and (max-width:991px) {
+    .row.cards-home .card-wrapper:nth-child(-n+2) {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:768px) {
+    .card-wrapper {
+        margin: 0 auto 30px;
+    }
+}
+@media (min-width:360px) and (max-width:768px) {
+    .card-wrapper {
+        max-width: 360px;
+    }
+    .ui_slider_block__desc {
+        max-width: 360px;
+        margin: 0 auto !important;
+        right: 0 !important;
+        height: calc(80% - 10px);
+    }
+}
+.ui_slider_block__desc {
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    right: inherit;
+    height: calc(80% - 10px);
+    opacity: 0;
+    transform: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    display: table;
+    width: calc(100% - 30px);
+    margin: 0 15px;
+}
+.ui_slider_block__desc article {
+    display: table-cell;
+    vertical-align: middle;
+}
+.ui_slider_block__desc ul {
+    font-size: 1rem;
+    margin-left: 0px;
+}
+.ui_slider_block__desc ul li {
+    color: #fff;
+    text-align: left;
+    list-style: none;
+}
+.ui_slider_block__desc ul li:before {
+    font-family: 'FontAwesome';
+    content: "\f00c";
+    margin-right: 5px;
+}
+.ui_slider_block__desc h3 {
+    font-weight: 700;
+    margin: 0;
+    /*color: #373737;*/
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    line-height: 35px;
+    height: 35px;
+}
+@media only screen and (min-width:992px) {
+    .ui_slider_block__desc h3 {
+        line-height: inherit;
+        height: inherit;
+    }
+}
+.ui_slider_block__desc p {
+    color: #ffffff;
+    padding: 0.5em 1em 0;
+    font-size: 14px;
+}
+
+@media only screen and (min-width:769px) and (max-width:992px) {
+    .last-block {
+        margin-top: 40px;
+        margin-left: 25%;
+    }
+    .ui_slider_block__desc{
+        height: calc(80% - 10px);
+    }
+}
+@media only screen and (max-width:768px) {
+    .row_top_slider_block {
+        margin-bottom: 0px;
+    }
+}
+
+/*New Card Boxes */
+.orange .ui_slider_block__desc {
+    background: var(--naranjafondo);
+}
+
+.green .ui_slider_block__desc {
+    background: var(--verdefondo);
+}
+
+.blue .ui_slider_block__desc {
+    background: var(--azulfondo);
+}
+
+.yellow .ui_slider_block__desc {
+    background: var(--amarillofondo);
+}
+
+.purple .ui_slider_block__desc{
+    background: var(--moradofondo);
+}
+
+.orange .card-title {
+     border-top-color: var(--naranja);
+}
+
+.green .card-title {
+    border-top-color: var(--verde);
+
+}
+
+.blue .card-title {
+    border-top-color: var(--azul);
+}
+
+.yellow .card-title {
+    border-top-color: var(--amarillo);
+}
+
+.purple .card-title {
+    border-top-color: var(--morado);
+}
+
+
+/*End new card Boxes */
+.selling_points_section {
+    min-height: 500px;
+}
+.selling_points_section h2.h1 {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.15;
+}
+@media only screen and (min-width:768px) {
+    .selling_points_section h2.h1 {
+        font-size: 60px;
+    }
+}
+.selling_points_section .media-body h3 {
+    font-size: 24px;
+    font-weight: 300;
+    color: #333;
+}
+.selling_points_section .media-body p {
+    color: #666;
+    font-weight: 300;
+}
+.selling_points_section .media {
+    min-height: 100px;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.row_top_slider_block {
+    margin-bottom: 20px;
+}
+
+.card-wrapper {
+    box-shadow: 10px 10px 15px 0px rgba(55, 55, 55, .10);
+    transition: all .25s ease-in-out;
+}
+
+
+@media only screen and (min-width: 768px){
+.flexbox-container {
+    margin: 0;
+}
+}
+
+@media only screen and (min-width: 768px){
+.flexbox-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+}
+
+/**********************************************************************modales**/
+
+
+/*fullscreen*/
+
+.modal-full {
+    min-width: 100%;
+    margin: 0;
+}
+
+.modal-full .modal-content {
+    min-height: 100vh;
+}
+
+
+/*ajustes*/
+
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 0rem;
+    outline: 0;
+}
+
+.modal-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.6rem;
+    border-bottom: 1px solid #e9ecef;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+}
+
+.modal-footer{
+    padding: 0.5rem;
+}
+
+#modalhtml .modal-footer,#modalhtml .modal-header{
+        border-top: 2px solid var(--naranja);
+        border-bottom: 2px solid var(--naranja);
+}
+
+#modalcss .modal-footer,#modalcss .modal-header{
+        border-top: 2px solid var(--azul);
+        border-bottom: 2px solid var(--azul);
+}
+
+#modaljs .modal-footer,#modaljs .modal-header{
+
+    border-top: 2px solid var(--verde);
+    border-bottom: 2px solid var(--verde);
+}
+
+#modalsql .modal-footer,#modalsql .modal-header{
+    border-top: 2px solid var(--amarillo);
+    border-bottom: 2px solid var(--amarillo);
+}
+
+#modalstructure .modal-footer,#modalstructure .modal-header{
+    border-top: 2px solid var(--naranja);
+    border-bottom: 2px solid var(--naranja);
+}
+
+#modalIngles .modal-footer,#modalIngles .modal-header{
+        border-top: 2px solid var(--morado);
+        border-bottom: 2px solid var(--morado);
+}
+
+#modalcsharp .modal-footer,#modalcsharp .modal-header{
+
+    border-top: 2px solid var(--verde);
+    border-bottom: 2px solid var(--verde);
+}
+
+#modalvs .modal-footer,#modalvs .modal-header{
+    border-top: 2px solid var(--amarillo);
+    border-bottom: 2px solid var(--amarillo);
+}
+
+
+#modalhtml .close,#modalhtml .modal-title{
+  color: var(--naranja);
+  text-shadow: none; 
+}
+
+#modalcss .close,#modalcss .modal-title{
+  color: var(--azul);
+  text-shadow: none; 
+}
+
+#modaljs .close,#modaljs .modal-title{
+    color: var(--verde);
+    text-shadow: none; 
+  }
+
+  #modalsql .close,#modalsql .modal-title{
+    color: var(--amarillo);
+    text-shadow: none; 
+  }
+
+  #modalstructure .close,  #modalstructure .modal-title{
+  color: var(--naranja);
+  text-shadow: none; 
+}
+
+#modalIngles .close,#modalIngles .modal-title{
+    color: var(--morado);
+    text-shadow: none; 
+  }
+
+  #modalcsharp .close,#modalcsharp .modal-title{
+    color: var(--verde);
+    text-shadow: none; 
+  }
+
+  #modalvs .close,#modalvs .modal-title{
+    color: var(--amarillo);
+    text-shadow: none; 
+  }
+
+#modalhtml .btn-default{
+    background-color: var(--naranja);
+}
+#modalcss .btn-default{
+    background-color: var(--azul);
+}
+#modaljs .btn-default{
+    background-color: var(--verde);
+}
+#modalsql .btn-default{
+    background-color: var(--amarillo);
+}
+#modalstructure .btn-default{
+    background-color: var(--naranja);
+}
+#modalIngles .btn-default{
+    background-color: var(--morado);
+}
+#modalcsharp .btn-default{
+    background-color: var(--verde);
+}
+#modalvs .btn-default{
+    background-color: var(--amarillo);
+}
+article i{
+    color: white;
+}
+
+.bg-dark1{
+    background: #7f8c8d;
+    background-color: #7f8c8d;
+}
+
+
+
+/*********************************************************************************************modulos*/
+
+.shape{    
+    border-style: solid; border-width: 0 70px 40px 0; float:right; height: 0px; width: 0px;
+    -ms-transform:rotate(360deg); /* IE 9 */
+    -o-transform: rotate(360deg);  /* Opera 10.5 */
+    -webkit-transform:rotate(360deg); /* Safari and Chrome */
+    transform:rotate(360deg);
+}
+.offer{
+    background:#fff; border:1px solid #ddd; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); margin: 15px 0; overflow:hidden;
+}
+.offer:hover {
+    -webkit-transform: scale(1.1); 
+    -moz-transform: scale(1.1); 
+    -ms-transform: scale(1.1); 
+    -o-transform: scale(1.1); 
+    transform:rotate scale(1.1); 
+    -webkit-transition: all 0.4s ease-in-out; 
+-moz-transition: all 0.4s ease-in-out; 
+-o-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+    }
+.shape {
+    border-color: rgba(255,255,255,0) #d9534f rgba(255,255,255,0) rgba(255,255,255,0);
+}
+.offer-radius{
+    border-radius:7px;
+}
+.offer-danger { border-color: #d9534f; }
+.offer-danger .shape{
+    border-color: transparent #d9534f transparent transparent;
+}
+.offer-success {    border-color: var(--verde); }
+.offer-success .shape{
+    border-color: transparent var(--verde) transparent transparent;
+}
+.offer-default {    border-color: #999999; }
+.offer-default .shape{
+    border-color: transparent #999999 transparent transparent;
+}
+.offer-primary {    border-color: var(--azul); }
+.offer-primary .shape{
+    border-color: transparent var(--azul) transparent transparent;
+}
+.offer-yellow {    border-color: var(--amarillo); }
+.offer-yellow .shape{
+    border-color: transparent var(--amarillo) transparent transparent;
+}
+.offer-purple {    border-color: var(--morado); }
+.offer-purple .shape{
+    border-color: transparent var(--morado) transparent transparent;
+}
+.offer-info {   border-color: #5bc0de; }
+.offer-info .shape{
+    border-color: transparent #5bc0de transparent transparent;
+}
+.offer-warning {    border-color: var(--naranja); }
+.offer-warning .shape{
+    border-color: transparent var(--naranja) transparent transparent;
+}
+
+.shape-text{
+    color:#fff; font-size:12px; font-weight:bold; position:relative; right:-40px; top:2px; white-space: nowrap;
+    -ms-transform:rotate(30deg); /* IE 9 */
+    -o-transform: rotate(360deg);  /* Opera 10.5 */
+    -webkit-transform:rotate(30deg); /* Safari and Chrome */
+    transform:rotate(30deg);
+}   
+.offer-content{
+    padding:0 10px 10px;
+    color: black;
+}
+/* @media (min-width: 487px) {
+  .container {
+    max-width: 750px;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+}
+@media (min-width: 900px) {
+  .container {
+    max-width: 970px;
+  }
+  .col-md-4 {
+    width: 33.33333333333333%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+  .col-lg-3 {
+    width: 25%;
+  } */
+  
+  a {
+    text-decoration: none;
+}
+
+
+.modal-body.bg-curso1 {
+    background-image: url('http://myfunnymemes.com/wp-content/uploads/2015/04/Doge-Meme-Lion-In-All-Its-Majestic-Glory.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.video {
+    height: 0;
+    position: relative;
+    padding-bottom: 56.25%; /* Если видео 16/9, то 9/16*100 = 56.25%. Также и с 4/3 - 3/4*100 = 75% */
+}
+.video iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.btn-warning {
+    color: #fff !important;
+    background-color: var(--naranja) !important;
+    border-color: var(--naranja) !important;
+}
+
+.btn-purple {
+    color: #fff !important;
+    background-color: var(--morado) !important;
+    border-color: var(--morado) !important;
+}
+
+.btn-green {
+    color: #fff !important;
+    background-color: var(--verde) !important;
+    border-color: var(--verde) !important;
+}
+
+.btn-yellow {
+    color: #fff !important;
+    background-color: var(--amarillo) !important;
+    border-color: var(--amarillo) !important;
+}
+
+.btn-success{
+   background-color: var(--verde1)!important;
+}
+
+.ccl{
+        padding:0rem !important;
+}
+
+
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+   /* border: 3px solid #22c0e8;*/
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+.filter {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+#mainlogo{
+    margin-right: 1em;
+}
+
+.mainflip .card-body i{
+    color: var(--azul);
+}
+
+.modal-header .btn-close{
+    margin: 0;
+}
+
+.btn-close-orange{
+    filter: invert(60%) sepia(50%) saturate(7341%) hue-rotate(1deg) brightness(103%) contrast(104%);
+}
+.btn-close-blue{
+    filter: invert(64%) sepia(63%) saturate(3720%) hue-rotate(178deg) brightness(91%) contrast(89%);
+}
+.btn-close-yellow{
+    filter: invert(88%) sepia(10%) saturate(6931%) hue-rotate(357deg) brightness(87%) contrast(106%);
+}
+.btn-close-purple{
+    filter: invert(30%) sepia(52%) saturate(6346%) hue-rotate(270deg) brightness(104%) contrast(101%);
+}
+.btn-close-green{
+    filter: invert(83%) sepia(17%) saturate(6070%) hue-rotate(23deg) brightness(100%) contrast(105%);
+}
+
+
