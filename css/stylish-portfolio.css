@@ -506,10 +506,16 @@ a:hover, a:focus, a:active {
 
 
 .navbar-brand {
-
   padding-top: 0rem; 
  padding-bottom: 0rem; 
     margin-right: 0rem;
+    font-size: 1.8rem;
+}
+.nav-link {
+  color: #fff!important;
+}
+.nav-link:hover{
+  color: var(--naranja)!important;
 }
 
 .copy{
@@ -803,5 +809,4 @@ footer {
 }
 section.banner h1 {
   padding-bottom: 4rem;
-  text-transform: capitalize;
 }
