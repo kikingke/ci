@@ -504,6 +504,11 @@ a:hover, a:focus, a:active {
     border-bottom: 1px solid rgba(255,255,255,.7);
 }
 
+.img-responsive{
+  height: 200px!important;
+  width: 100%;
+  object-fit: cover;
+}
 
 .navbar-brand {
   padding-top: 0rem; 
